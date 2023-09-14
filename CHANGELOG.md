@@ -1,14 +1,23 @@
 # Changelog
 
+<a name="0.3.0"></a>
+
+## 0.3.0 (20232-09-14)
+
+### Breaking
+
+- Using [`eza`](https://github.com/eza-community/eza) now
+
 <a name="0.2.3"></a>
+
 ## 0.2.3 (2022-07-17)
 
 ### Fixed
 
 - 🐛 fix duplicate path addition [[b2d32dc](https://github.com/ptavares/zsh-exa/commit/b2d32dcf056b80ac10f9fae2b44fe24af438ca49)]
 
-
 <a name="0.2.2"></a>
+
 ## 0.2.2 (2022-07-17)
 
 ### Fixed
@@ -17,27 +26,27 @@
 
 ### Miscellaneous
 
--  Merge pull request [#4](https://github.com/ptavares/zsh-exa/issues/4) from a5ob7r/fix_duplicate_path_addition [[6888b6d](https://github.com/ptavares/zsh-exa/commit/6888b6dfeb3c7fd9ff539b559821d8ed246f69f4)]
-
+- Merge pull request [#4](https://github.com/ptavares/zsh-exa/issues/4) from a5ob7r/fix_duplicate_path_addition [[6888b6d](https://github.com/ptavares/zsh-exa/commit/6888b6dfeb3c7fd9ff539b559821d8ed246f69f4)]
 
 <a name="0.2.1"></a>
+
 ## 0.2.1 (2022-04-06)
 
 ### Miscellaneous
 
--  Merge pull request [#2](https://github.com/ptavares/zsh-exa/issues/2) from vv3d0x/fix-double-slash [[73bd75c](https://github.com/ptavares/zsh-exa/commit/73bd75c45cd3b5c2eafa180486a5a6388589280d)]
--  Prevent double slash in paths [[8c97924](https://github.com/ptavares/zsh-exa/commit/8c97924809d4b940b0a5ba94d446a4955fe817d7)]
-
+- Merge pull request [#2](https://github.com/ptavares/zsh-exa/issues/2) from vv3d0x/fix-double-slash [[73bd75c](https://github.com/ptavares/zsh-exa/commit/73bd75c45cd3b5c2eafa180486a5a6388589280d)]
+- Prevent double slash in paths [[8c97924](https://github.com/ptavares/zsh-exa/commit/8c97924809d4b940b0a5ba94d446a4955fe817d7)]
 
 <a name="0.2.0"></a>
+
 ## 0.2.0 (2021-09-03)
 
 ### Fixed
 
 - 🐛 resolve download URL + new path [[5fed859](https://github.com/ptavares/zsh-exa/commit/5fed85936e728f69fdccd39dd975c10cb07dfd43)]
 
-
 <a name="0.1.0"></a>
+
 ## 0.1.0 (2021-08-18)
 
 ### Added
@@ -58,5 +67,3 @@
 - 📝 add Changelog + Contributing [[c51e458](https://github.com/ptavares/zsh-exa/commit/c51e458b5816bd270597031fd7d3531babeb3f37)]
 - 🛂 add exec permission [[3f28e53](https://github.com/ptavares/zsh-exa/commit/3f28e53f84c96b493dc25bb09799d6c21b61e94d)]
 - 📝 add licence badge [[99834c1](https://github.com/ptavares/zsh-exa/commit/99834c1a8ec53bcb365e918911486934665e8046)]
-
-
