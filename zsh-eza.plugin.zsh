@@ -35,10 +35,21 @@ _zsh_eza_log() {
 _zsh_eza_install() {
     _zsh_eza_log $NONE "blue" "#############################################"
     _zsh_eza_log $BOLD "blue" "Installing eza..."
-    local last_version=$(_zsh_eza_last_version)
     _zsh_eza_log $NONE "blue" "-> retrieve last version of eza..."
     cargo install eza
     _zsh_eza_log $NONE "blue" "#############################################"
+}
+
+_zsh_eza_check_for_update() {
+    local current_version=$(eza --version | sed -n 2p)
+    local last_version=$(_zsh_eza_last_version)
+    
+    if is-at-least ${last_version#v*} ${current_version#v*}
+    then
+        ;
+    else
+        update_zsh_eza
+    fi
 }
 
 update_zsh_eza() {
@@ -61,12 +72,7 @@ update_zsh_eza() {
 }
 
 # install eza if it isnt already installed
-[[ ! -f "${zsh_eza_VERSION_FILE}" ]] && _zsh_eza_install
-
-# load eza if it is installed
-if [[ -f "${zsh_eza_VERSION_FILE}" ]]; then
-    _zsh_eza_load
-fi
+_zsh_eza_check_for_update
 
 
 ########################################################
