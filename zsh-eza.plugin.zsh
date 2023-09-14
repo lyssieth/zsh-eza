@@ -15,7 +15,7 @@ NONE="NONE"
 # Functions
 #########################
 
-_zsh_exa_last_version() {
+_zsh_eza_last_version() {
     echo $(curl -s https://api.github.com/repos/eza-community/eza/releases/latest | grep tag_name | cut -d '"' -f 4)
 }
 
